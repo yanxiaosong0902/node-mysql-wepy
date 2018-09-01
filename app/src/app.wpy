@@ -1,11 +1,14 @@
 <style lang="less">
+    @import url('./assets/css/common.less');
     .container {
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        color:#ff0000;
         justify-content: space-between;
         box-sizing: border-box;
+        padding-bottom:100rpx;
     }
 </style>
 
@@ -18,13 +21,38 @@ import { getCryptData, getCryptData_login } from './utils/getCryptData.js'
 export default class extends wepy.app {
     config = {
         pages: [
-            'pages/index'
+            'pages/me',
+            'pages/index',
+            'pages/cart',
+            'pages/category',
+            'pages/info'
         ],
         window: {
             backgroundTextStyle: 'light',
             navigationBarBackgroundColor: '#ff0000',
-            navigationBarTitleText: 'WeChat',
-            navigationBarTextStyle: 'black'
+            navigationBarTitleText: '印尼小程序',
+            navigationBarTextStyle: '#fff'
+        },
+        tabBar: {
+            selectedColor:"#ff0000",
+            "list": [
+                {
+                    "pagePath": "pages/index",
+                    "text": "首页"
+                },
+                {
+                    "pagePath": "pages/category",
+                    "text": "分类"
+                },
+                {
+                    "pagePath": "pages/cart",
+                    "text": "购物车"
+                },
+                {
+                    "pagePath": "pages/me",
+                    "text": "我的"
+                }
+            ]
         },
         http_url:'http://localhost:3000'
     }

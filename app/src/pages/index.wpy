@@ -14,9 +14,39 @@
     .userinfo-nickname {
         color: #aaa;
     }
+    .searchBar{
+        background:#ff0000;
+        color:#333;
+        width:100%;
+        position:fixed;
+        top:0;
+        z-index:999;
+        input{
+            width:80%;
+            height:35px;
+            margin:5px auto;
+            background:#fff;
+            padding:0 5px;
+        }
+        icon{
+            position: absolute;
+            right:15%;
+            top:50%;
+            transform: translateY(-50%);
+            z-index:99;
+        }
+    }
+    .container{
+        padding-top:50px;
+    }
 </style>
 <template>
     <view class="container">
+        <view class="searchBar">
+            <input placeholder="找攻略"/>
+            <icon type="search" size="24" color="#333">
+            </icon>
+        </view>
         <view class="userinfo" @tap="handleViewTap">
             <image class="userinfo-avatar" src="{{ userInfo.avatarUrl }}" background-size="cover"/>
             <view class="userinfo-nickname">{{ userInfo.nickName }}</view>
@@ -62,7 +92,7 @@
 
         <panel>
             <view class="title" slot="title">测试组件Repeat</view>
-            <repeat for="" index="index" item="item" key="key">
+            <repeat for="{{groupList}}" index="index" item="item" key="key">
             <group :grouplist="item" :indexa="index"></group>
             </repeat>
         </panel>
@@ -91,7 +121,7 @@
 
     export default class Index extends wepy.page {
     config = {
-        navigationBarTitleText: 'test'
+        //navigationBarTitleText: 'test'
     }
     components = {
         panel: Panel,

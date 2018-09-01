@@ -1,0 +1,43 @@
+<template>
+    <view class="cart">
+        <view class="container">
+            <text>cart</text>
+            <view hover-class="{{}}" hover-stop-propagation="{{}}" hover-start-time="{{}}" hover-stay-time="{{}}" @tap="">
+              <image src="../assets/img/test1.png" mode="scaleToFill"
+                lazy-load="false">
+            </view>
+        </view>
+    </view>
+</template>
+<script>
+import wepy from 'wepy'
+    export default class Cart extends wepy.page{
+        config = {
+
+        }
+        components = {
+        }
+
+        data = {
+
+        }
+
+        computed = {
+
+        }
+
+        methods = {
+
+        }
+
+        events = {
+
+        }
+
+        onload(){
+
+        }
+    }
+</script>
+<style lang="less" scoped>
+</style>

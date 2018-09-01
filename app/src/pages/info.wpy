@@ -1,0 +1,43 @@
+<template>
+    <view class="info">
+        <view class="container">
+            <text>info</text>
+            <view hover-class="{{}}" hover-stop-propagation="{{}}" hover-start-time="{{}}" hover-stay-time="{{}}" @tap="">
+              <image src="../assets/img/test.jpg" mode="scaleToFill"
+                lazy-load="false">
+            </view>
+        </view>
+    </view>
+</template>
+<script>
+import wepy from 'wepy'
+    export default class Info extends wepy.page{
+        config = {
+
+        }
+        components = {
+        }
+
+        data = {
+
+        }
+
+        computed = {
+
+        }
+
+        methods = {
+
+        }
+
+        events = {
+
+        }
+
+        onload(){
+
+        }
+    }
+</script>
+<style lang="less" scoped>
+</style>
