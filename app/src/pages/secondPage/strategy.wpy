@@ -1,0 +1,49 @@
+<template>
+    <view class="category">
+        <view class="container">
+             <text>攻略详情</text>
+             <help></help>
+             <food></food>
+             <strategyInfo></strategyInfo>
+        </view>
+    </view>
+</template>
+<script>
+import wepy from 'wepy'
+import Help from '@/components/strategy/help'
+import Food from '@/components/strategy/food'
+import StrategyInfo from '@/components/strategy/strategyInfo'
+    export default class Strategy extends wepy.page{
+        config = {
+            navigationBarTitleText: '印象·攻略',
+            page:[]
+        }
+        components = {
+            strategyInfo:StrategyInfo,
+            food:Food,
+            help:Help
+        }
+
+        data = {
+
+        }
+
+        computed = {
+
+        }
+
+        methods = {
+
+        }
+
+        events = {
+
+        }
+
+        onload(){
+
+        }
+    }
+</script>
+<style lang="less" scoped>
+</style>

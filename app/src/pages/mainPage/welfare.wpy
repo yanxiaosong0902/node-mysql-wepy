@@ -1,17 +1,17 @@
 <template>
-    <view class="info">
+    <view class="cart">
         <view class="container">
-            <text>info</text>
+            <text>cart</text>
             <view hover-class="{{}}" hover-stop-propagation="{{}}" hover-start-time="{{}}" hover-stay-time="{{}}" @tap="">
-              <image src="../assets/img/test.jpg" mode="scaleToFill"
-                lazy-load="false">
+              <image src="../../assets/img/test1.png" mode="scaleToFill"
+                lazy-load="false" />
             </view>
         </view>
     </view>
 </template>
 <script>
 import wepy from 'wepy'
-    export default class Info extends wepy.page{
+    export default class Welfare extends wepy.page{
         config = {
 
         }

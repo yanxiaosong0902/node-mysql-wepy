@@ -1,0 +1,46 @@
+<template>
+    <view class="category">
+        <view class="container">
+            <text>category</text>
+            <navigator url="../secondPage/strategy" open-type="navigate" hover-class="none">
+                查找攻略
+            </navigator>
+            <!-- <navigator url="../secondPage/strategy" open-type="redirect" hover-class="none">
+                查找攻略本页面
+            </navigator> -->
+        </view>
+    </view>
+</template>
+<script>
+import wepy from 'wepy'
+    export default class Travel extends wepy.page{
+        config = {
+            navigationBarTitleText: '印象·攻略',
+        }
+        components = {
+
+        }
+
+        data = {
+
+        }
+
+        computed = {
+
+        }
+
+        methods = {
+
+        }
+
+        events = {
+
+        }
+
+        onload(){
+
+        }
+    }
+</script>
+<style lang="less" scoped>
+</style>

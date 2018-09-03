@@ -1,0 +1,20 @@
+<style lang="less">
+
+</style>
+<template>
+    <view>
+        <text>help</text>
+        <slot name="title">
+            help
+        </slot>
+        <slot>
+        </slot>
+    </view>
+</template>
+<script>
+    import wepy from 'wepy'
+
+    export default class Help extends wepy.component {
+    
+    }
+</script>

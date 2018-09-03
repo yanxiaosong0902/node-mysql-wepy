@@ -1,0 +1,20 @@
+<style lang="less">
+
+</style>
+<template>
+    <view>
+        <text>StrategyInfo</text>
+        <slot name="title">
+            StrategyInfo
+        </slot>
+        <slot>
+        </slot>
+    </view>
+</template>
+<script>
+    import wepy from 'wepy'
+
+    export default class StrategyInfo extends wepy.component {
+    
+    }
+</script>

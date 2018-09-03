@@ -21,36 +21,33 @@ import { getCryptData, getCryptData_login } from './utils/getCryptData.js'
 export default class extends wepy.app {
     config = {
         pages: [
-            'pages/me',
-            'pages/index',
-            'pages/cart',
-            'pages/category',
-            'pages/info'
+            'pages/mainPage/index',
+            'pages/mainPage/travel',
+            'pages/mainPage/welfare',
+            'pages/secondPage/strategy'
         ],
         window: {
             backgroundTextStyle: 'light',
-            navigationBarBackgroundColor: '#ff0000',
-            navigationBarTitleText: '印尼小程序',
-            navigationBarTextStyle: '#fff'
+            navigationBarBackgroundColor: '#c9f7f3',
+            navigationBarTitleText: '印尼·印象',
+            navigationBarTextStyle: 'black'
         },
         tabBar: {
-            selectedColor:"#ff0000",
+            color:'#7e8388',
+            selectedColor:"#333",
+            backgroundColor:'#c9f7f3',
             "list": [
                 {
-                    "pagePath": "pages/index",
-                    "text": "首页"
+                    "pagePath": "pages/mainPage/index",
+                    "text": "快眼游"
                 },
                 {
-                    "pagePath": "pages/category",
-                    "text": "分类"
+                    "pagePath": "pages/mainPage/travel",
+                    "text": "精彩旅"
                 },
                 {
-                    "pagePath": "pages/cart",
-                    "text": "购物车"
-                },
-                {
-                    "pagePath": "pages/me",
-                    "text": "我的"
+                    "pagePath": "pages/mainPage/welfare",
+                    "text": "福利社"
                 }
             ]
         },
